@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.Header {
+    display: flex;
+    height: 2rem;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    top: 0;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    color: white;
+}
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+}
