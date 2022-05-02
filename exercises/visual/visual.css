@@ -1,0 +1,79 @@
+body {
+    background-color: #cc4444;
+}
+
+.Header {
+    padding: 4px;
+    border: 1px solid #aa5555;
+    color: #aa5555;
+}
+
+.Content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: salmon;
+}
+
+/* https://www.a11yproject.com/checklist/#use-a-simple-straightforward-and-consistent-layout */
+.Footer {
+    text-align: right;
+}
+
+p {
+    font-size: 12pt;
+}
+
+input {
+    border-color: #aa4444;
+    border-style: solid;
+    background: none;
+}
+
+/* https://www.a11yproject.com/checklist/#check-custom-selection-colors */
+::selection {
+    background-color: #aa444455;
+}
+
+img {
+    margin: 5em;
+}
+
+/* https://www.a11yproject.com/checklist/#make-sure-color-isnt-the-only-way-information-is-conveyed */
+a {
+    text-decoration: none;
+}
+
+/* https://www.a11yproject.com/checklist/#ensure-animations-are-subtle-and-do-not-flash-too-much */
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#container {
+    height: 25em;
+    width: 100em;
+}
+
+#animated1 {
+    text-align: center;
+    height: 15em;
+    width: 15em;
+    position: relative;
+    background-color: antiquewhite;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#static {
+    text-align: center;
+    height: 15em;
+    width: 15em;
+    background-color: antiquewhite;
+}
