@@ -1,0 +1,34 @@
+body {
+    background-color: bisque;
+    width: 75em;
+    margin: 0 auto;
+}
+
+.Content {
+    display: flex;
+}
+
+#video-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#description {
+    padding: 1em;
+}
+
+#audiofile {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+    font-weight: 100;
+}
+
+/* HINTS: */
+/* https://www.a11yproject.com/checklist/#make-sure-that-media-does-not-autoplay */
+/* https://www.a11yproject.com/checklist/#confirm-the-presence-of-captions */
