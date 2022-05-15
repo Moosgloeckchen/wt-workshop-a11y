@@ -30,5 +30,5 @@ section {
 }
 
 .errors-badly-identified label input {
-display: block;
+    display: block;
 }
