@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--https://www.a11yproject.com/checklist/#use-a-lang-attribute-on-the-html-element-->
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--https://www.a11yproject.com/checklist/#provide-a-unique-title-for-each-page-or-view-->
+    <title>keyboard</title>
+    <link rel="stylesheet" href="./2-keyboard.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <div class="Container">
+        <section>
+            <div class="focus-order-broken">
+                <a class="first" href="#">First link</a>
+                <a class="second" href="#">Second link</a>
+                <a class="Third" href="#">Third link</a>
+            </div>
+        </section>
+
+        <section>
+            <nav class="dropdown-nav" role="navigation">
+                <ul>
+                    <li>
+                        <a href="https://www.a11yproject.com/">Pages</a>
+                        <ul class="submenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section>
+            <a class="button" href="https://www.a11yproject.com/" role="button">Continue</a>
+        </section>
+
+        <section>
+            <a href="page.html" tabindex="5">A link with a tabindex greater than 0</a>
+        </section>
+    </div>
+</body>
+
+</html>

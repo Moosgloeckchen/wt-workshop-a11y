@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin: 2rem;
+}

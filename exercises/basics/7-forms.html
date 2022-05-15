@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--https://www.a11yproject.com/checklist/#use-a-lang-attribute-on-the-html-element-->
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--https://www.a11yproject.com/checklist/#provide-a-unique-title-for-each-page-or-view-->
+    <title>forms</title>
+    <link rel="stylesheet" href="./7-forms.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+    <div class="Container">
+        <section>
+
+            <form class="errors-badly-identified errors-colour-only">
+                <div class="validation-summary" role="alert">
+                    You need to fix the errors on this page before continuing.
+                </div>
+                <label>
+                    Passport number
+                    <input class="has-errors" name="name" type="text">
+                </label>
+                <label>
+                    Name on passport
+                    <input name="surname" type="text">
+                </label>
+                <label>
+                    Date of expiry
+                    <input class="has-errors" name="date-of-birth" type="text">
+                </label>
+            </form>
+        </section>
+
+        <section>
+            <form>
+                <h4>Is Web Accessibility important?</h4>
+                <label class="block-label" for="radio-inline-1">
+                    <input id="radio-inline-1" name="radio-inline-group" type="radio" value="Yes">
+                    Yes
+                </label><br>
+                <label class="block-label" for="radio-inline-2">
+                    <input id="radio-inline-2" name="radio-inline-group" type="radio" value="No">
+                    No
+                </label>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
